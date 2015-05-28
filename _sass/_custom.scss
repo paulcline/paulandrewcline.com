@@ -1,0 +1,53 @@
+.site-footer {
+    border-bottom: 5px solid $grey-color-dark;
+    border-top: 1px solid $grey-color-light;    
+}
+
+.social-media-list {
+    list-style-type: none;    
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.site-nav {
+    border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 42px;
+
+    ul {
+      float: right;
+      line-height: 42px;
+      margin-bottom: 0px;
+    }
+    li {
+      padding-right: 5px;
+      right: 5px;
+    }
+}
+.site-nav .title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    float: left;
+    text-decoration: none;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+    
+    @include media-query($on-palm) {
+      font-size: 18px;
+
+      li {
+        float: right;
+      }
+
+      svg {
+        display: inline-block;
+      }
+    }
+
+}
