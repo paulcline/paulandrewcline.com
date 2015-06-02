@@ -12,25 +12,14 @@
 
 .site-nav {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 42px;
-
-    ul {
-      float: right;
-      line-height: 42px;
-      margin-bottom: 0px;
-    }
-    li {
-      padding-right: 5px;
-      right: 5px;
-    }
 }
-.site-nav .title {
+
+.title {
     font-family: 'Permanent Marker', cursive;
     font-size: 26px;
     line-height: 42px;
     letter-spacing: -1px;
-    float: left;
     text-decoration: none;
 
     &,
@@ -40,14 +29,24 @@
     
     @include media-query($on-palm) {
       font-size: 18px;
-
-      li {
-        float: right;
-      }
-
-      svg {
-        display: inline-block;
-      }
     }
+}
 
+.thing {
+  h2 {
+    font-size: 18px;
+  }
+
+  ul {
+    margin-left: 0px;
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+    li {
+      background-color: #B6E8FD;
+      display: inline;
+      padding: 2px;
+    }
+  }
 }
