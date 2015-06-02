@@ -2,7 +2,7 @@
 layout: post
 title:  "Bone Broth? That's Also Called Stock"
 date:   2015-05-26 23:08:18
-categories: jekyll update
+categories: ["serious eats", "twitter"]
 ---
 
 <a href="http://twitter.com/stockstickler">@StockStickler</a>, a simple Twitter response bot dreamt up by <a href="https://twitter.com/maxfalkowitz">@maxfalkowitz</a>, trolling users for using the of the moment term for stock: bone broth.
