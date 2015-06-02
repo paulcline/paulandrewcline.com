@@ -4,23 +4,19 @@ layout: default
 
 <div class="home">
 
-  {% comment %}  
-  <h1 class="page-heading">Posts</h1>
+  <div class="intro">
+    <p>I spend my days helping the <a href="http://seriouseats.com/masthead">team</a> at <a href="http://seriouseats.com">Serious Eats</a> build great things.  You can find me at <a href="http://twitter.com/paulandrewcline">@paulandrewcline</a> on Twitter and on Github at <a href="http://github.com/paulcline">paulcline</a>, but most of my code is private.</p>
+    <p>I enjoy helping fun and meaningful people, build fun and meaningful things.</p>
+    <p>If that's you, get in touch.</p>
+  </div>
 
-  <ul class="post-list">
+  <div class="things">
+    <p class="title">Some Things I've Built</p>
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        <span class="thing">
+          <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          {{ post.content }}
+        </span>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-  {% endcomment %}
-
+  </div>
 </div>
