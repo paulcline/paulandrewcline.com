@@ -33,8 +33,17 @@
 }
 
 .thing {
+
+  padding-bottom: 20px;
+
   h2 {
+    background-color: #CAE5FF;
     font-size: 18px;
+    padding: 2px;
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
   }
 
   ul {
@@ -44,7 +53,7 @@
       text-decoration: none;
     }
     li {
-      background-color: #B6E8FD;
+      background-color: #DCDCDC;
       display: inline;
       padding: 2px;
     }
