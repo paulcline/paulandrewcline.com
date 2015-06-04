@@ -13,10 +13,10 @@ layout: default
   <div class="things">
     <p class="title">Some Things I've Built</p>
     {% for post in site.posts %}
-        <span class="thing">
+        <div class="thing">
           <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
           {{ post.content }}
-        </span>
+        </div>
     {% endfor %}
   </div>
 </div>
