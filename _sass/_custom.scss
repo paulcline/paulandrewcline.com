@@ -34,6 +34,19 @@
 
 .thing {
 
+  .preview {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .preview img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   padding-bottom: 20px;
 
   h2 {
